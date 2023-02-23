@@ -1,5 +1,5 @@
 {:top-namespace "io.replikativ"
- :interface-ns "interface"
+ :interface-ns "api"
  :default-profile-name "default"
  :compact-views #{}
  :vcs {:name "git"

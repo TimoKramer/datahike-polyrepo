@@ -1,5 +1,32 @@
-{:aliases  {:dev {:extra-paths ["development/src"]
-                  :extra-deps {org.clojure/clojure {:mvn/version "1.11.1"}}}
+{:aliases  {:dev {:extra-paths ["development/src"
+                                "components/datahike-lib/src"
+                                "components/datahike-server/src"
+                                "components/datalog-parser/src"]
+                  :extra-deps {org.clojure/clojure                         {:mvn/version "1.11.1"}
+                               org.clojure/clojurescript                   {:mvn/version "31.11.4"}
+                               org.clojure/test.check                      {:mvn/version "31.1.1"}
+                               io.replikativ/datalog-parser                {:mvn/version "30.2.25"}
+                               io.replikativ/hasch                         {:mvn/version "30.3.7"}
+                               io.replikativ/hitchhiker-tree               {:mvn/version "30.2.222"}
+                               io.replikativ/incognito                     {:mvn/version "30.3.66"}
+                               io.replikativ/konserve                      {:mvn/version "30.7.285"}
+                               io.replikativ/superv.async                  {:mvn/version "30.3.43"}
+                               io.replikativ/zufall                        {:mvn/version "30.1.0"}
+                               clj-http/clj-http                           {:mvn/version "3.12.3"}
+                               com.taoensso/timbre                         {:mvn/version "35.2.1"}
+                               environ/environ                             {:mvn/version "31.2.0"}
+                               junit/junit                                 {:mvn/version "34.13.2"}
+                               lambdaisland/kaocha                         {:mvn/version "31.68.1059"}
+                               lambdaisland/kaocha-cljs                    {:mvn/version "31.0.107"}
+                               medley/medley                               {:mvn/version "31.4.0"}
+                               metosin/reitit                              {:mvn/version "30.5.18"}
+                               metosin/spec-tools                          {:mvn/version "30.10.5"}
+                               mount/mount                                 {:mvn/version "30.1.16"}
+                               mvxcvi/clj-cbor                             {:mvn/version "31.1.0"}
+                               persistent-sorted-set/persistent-sorted-set {:mvn/version "30.2.1"}
+                               ring-cors/ring-cors                         {:mvn/version "30.1.13"}
+                               ring/ring-core                              {:mvn/version "31.9.5"}
+                               ring/ring-jetty-adapter                     {:mvn/version "31.9.5"}}}
 
             :test {:extra-paths []}
 
